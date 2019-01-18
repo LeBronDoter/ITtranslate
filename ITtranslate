@@ -1,1 +1,10 @@
-wait new idea
+import requests
+db_word = ("hello", "world")
+for el_in_db in db_word:
+	print(el_in_db /n"Введите перевод:")
+	us_resp = input()
+	link_on_req = "https://translate.yandex.net/api/v1.5/tr/translate?lang=en-ru&text=" + el_in_db + "&key=trnsl.1.1.20181127T105609Z.1cd65afb1c220376.15fb0fa104066033ec011f5f47d6fc0557a9c91b"
+	req_ya = requests.get(link_on_req)
+		print(req_ya)
+	while req_ya != us_resp:
+		print("False")
