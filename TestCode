@@ -1,0 +1,26 @@
+db_word = ("hello", "world")
+for el_in_db in db_word:
+	print(el_in_db, "/nВведите перевод:")
+	us_resp = input()
+	req_ya = "hello"
+#		print(req_ya)
+	while req_ya != us_resp:
+    print("False")
+    
+----------- -------------------------------------------
+    
+    db_word = ("hello", "world")
+
+def vvod_dan():
+    us_resp = input()
+    return
+
+for el_in_db in db_word:
+	print(el_in_db, "/nВведите перевод:")
+    vvod_dan()
+    req_ya = "hello"
+#		print(req_ya)
+	while req_ya != us_resp:
+        print("False!")
+        vvod_dan()
+    print("True!")
