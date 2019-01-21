@@ -9,7 +9,7 @@ for el_in_db in db_word:
     
 ----------- -------------------------------------------
     
-    db_word = ("hello", "world")
+db_word = ("hello", "world")
 
 def vvod_dan():
     us_resp = input()
@@ -24,3 +24,21 @@ for el_in_db in db_word:
         print("False!")
         vvod_dan()
     print("True!")
+--------------------------------------
+db_word = ("hello", "world")
+
+#def vvod_dan():
+
+#    return us_resp
+
+for el_in_db in db_word:
+	us_resp = ""
+    #    vvod_dan()
+    req_ya = "hello"
+#		print(req_ya)
+	while req_ya != us_resp:
+        print(el_in_db, "/nВведите перевод:")
+        us_resp = input()
+            print("False!")
+#        vvod_dan()
+        print("True!")
