@@ -1,0 +1,23 @@
+from kivy.app import App
+from kivy.uix.button import Button
+from kivy.uix.codeinput import CodeInput
+from pygments.lexers import HtmlLexer
+from kivy.uix.boxlayout import BoxLayout
+from kivy.config import Config
+Config.set('graphics', 'resizable', '0');
+Config.set('graphics', 'widtg', '900');
+Config.set('graphics', 'height', '600');
+
+from kivy.uix.floatlayout import FloatLayout
+from kivy.uix.scatter import Scatter
+
+class BoxApp(App):
+    def build(self):
+        bl = BoxLayout(orientation='horizontal', spacing=100)
+        bl.add_widget( Button(text = 'Button1'))
+        bl.add_widget( Button(text = 'Button2'))
+        bl.add_widget( Button(text = 'Button3'))
+        return bl
+       
+if __name__ == "__main__":
+    BoxApp().run()
